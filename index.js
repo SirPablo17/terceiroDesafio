@@ -34,16 +34,35 @@ class Heroi {
   const guerreiro = new Heroi("Kauã", 30, "Guerreiro");
   const monge = new Heroi("Pablo", 40, "Monge");
   const ninja = new Heroi("Eliana", 25, "Ninja");
-  let i = 0;
+  let tipoLutador = 0;
 
-  while (i <= 2){
 
-    i++
-    mago.atacar();     
-    guerreiro.atacar();  
-    monge.atacar();      
-    ninja.atacar();
+  while(tipoLutador <= 3){
 
-    console.log("Apenas colocando uma repetição")
-    
+    if(tipoLutador === 0){
+
+    mago.atacar();
+    tipoLutador++
   }
+    else if(tipoLutador === 1){
+
+    guerreiro.atacar();  
+    tipoLutador++
+
+  }
+    else if(tipoLutador === 2){
+
+    monge.atacar();  
+    tipoLutador++
+
+  }
+    else if(tipoLutador === 3){
+
+    ninja.atacar();
+    tipoLutador++
+  }
+}
+
+  
+    
+   
